@@ -1,0 +1,160 @@
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#nav1 {
+  background: #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+#nav1 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+#nav1 a:hover {
+  background: deeppink;
+}
+
+
+header > div {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  color: deeppink;
+  margin-bottom: 1rem;
+}
+
+header p {
+  color: #555;
+  font-style: italic;
+}
+
+
+.filmes-terror {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.filmes-terror h2 {
+  color: deeppink;
+  margin-bottom: 1.5rem;
+}
+
+.filmes-terror ul {
+  list-style: disc inside;
+}
+
+.filmes-terror li {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filmes-terror li:first-child { color: deeppink; font-weight: 700; }
+.filmes-terror li:last-child { font-style: italic; color: #666; }
+.filmes-terror li:nth-child(2) { background: #ffe6f0; }
+.filmes-terror li:nth-of-type(3) { text-decoration: underline; }
+
+.filmes-terror li + li {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+.filmes-terror li img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.terceira-secao > div {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.terceira-secao > div > div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.terceira-secao h2, .terceira-secao h3 {
+  color: deeppink;
+  margin-bottom: 0.8rem;
+}
+
+.terceira-secao img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.terceira-secao p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.terceira-secao mark {
+  background: deeppink;
+  color: #fff;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+header div h1 { font-weight: 700; }
+header > div > p { font-style: italic; }
+.filmes-terror ul li + li { border-top: 1px solid #ddd; padding-top: 0.5rem; }
+
+@media (max-width: 768px) {
+  .terceira-secao > div {
+    flex-direction: column;
+  }
+}
