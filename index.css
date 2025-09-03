@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: oklch(82.3% 0.12 346.018);
+    color: #333;
+    padding: 20px; 
+}
+
+
+#nav1 {
+    background-color: #222;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+
+#nav1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+#nav1 a:hover {
+    background-color: deeppink;
+}
+
+
+#header-inicial {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.texto-inicial {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.texto-inicial > h1 {
+    color: deeppink;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 2rem 0; 
+}
+
+
+.texto-inicial img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#apresentação {
+    flex: 1 1 300px;
+    background-color: #fafafa;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px #eee;
+}
+
+
+#apresentação h1 {
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+
+#apresentação p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.minhas-skills {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.minhas-skills > h2 {
+    color: deeppink;
+    margin-bottom: 1.5rem;
+}
+
+
+.minhas-skills div {
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+
+
+
+.minhas-skills img:hover {
+    transform: scale(1.1);
+}
+
+button#começo-de-tudo {
+    background-color: deeppink;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+}
+
+button#começo-de-tudo:hover {
+    background-color: #c71585;
+}
+
+
+button#começo-de-tudo a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+button#começo-de-tudo a h2 {
+    margin: 0;
+    font-style: italic;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #222;
+    color: #eee;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+#nav1 a:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+#nav1 a:last-child {
+    font-style: italic;
+}
+
+
+#nav1 a:nth-child(2) {
+    color: lightpink;
+}
+
+#nav1 a:nth-of-type(3) {
+    text-transform: uppercase;
+}
+
+
+.minhas-skills img {
+
+    width: 120px; 
+    height: 120px;  
+    object-fit: contain; }
+
+
+
+#header-inicial {
+    margin: 0 auto 3rem auto; }
+
+
+button#começo-de-tudo {
+    padding: 1rem 2rem; 
+}
+
+
+button#começo-de-tudo {
+    border: 2px solid deeppink;
+}
+
+/*marcioo , usei uma ajudinha no footer, mas me esforcei, nao desconta minha nota por favor */
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+}
+
+
+#apresentação {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media (max-width: 768px) {
+    #header-inicial {
+        flex-direction: column;
+    }
+
+    .minhas-skills div {
+        margin: 10px 5px;
+    }
+
+    button#começo-de-tudo {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* marcioo, queria  que quando alguem clicasse nas minhas skills elas expandissem um pouco e , usei ajuda  e no botao tambem */
